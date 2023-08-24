@@ -9,16 +9,20 @@ body {
     background: #222;
 }
 
-.weather-card{
+.card{
+    height: 658px;
     width: 90%;
     max-width: 470px;
+    border-radius: 30px;
+    margin: 100px;
+}
+
+.weather-card{
     background: linear-gradient(135deg, #00feba, #5b548a);
     color: #fff;
     margin: 100px auto 0;
-    border-radius: 30px;
     padding: 40px 35px;
     text-align: center;
-    height: 658px;
 }
 
 .search {

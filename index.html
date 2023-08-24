@@ -5,9 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bucket-list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
 <body>
-    <div class="weather-card">
+    <div class="bucket-list-card card">
+        <div class="add-task">
+                <input id="inputField" type="text" placeholder="Add a new task" spellcheck="false">
+                <button id="addToDo"><img src="images/comment-regular.png"></button>
+        </div>
+        <div class="to-dos" id="toDoContainer">
+            <ul id="toDoItem"></ul>
+        </div>
+    </div>
+    <div class="weather-card card">
         <div class="search">
             <input type="text" placeholder="enter city name" spellcheck="false">
             <button><img src="images/search.png"></button>
@@ -40,5 +51,7 @@
 
     <script src="weather-app.js">
     </script>
+
+    <script src="bucket-list.js"></script>
 </body>
 </html>
