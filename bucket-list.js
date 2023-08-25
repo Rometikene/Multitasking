@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (taskText !== "") {
             const existingTasks = toDoItem.querySelectorAll(".itemToDo").length;
 
-            if (existingTasks < 9) {
+            if (existingTasks < 8) {
                 const taskItemHTML = `
                     <div class="itemToDo">
                         <span class="toDoText">${taskText}</span>
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 saveToDoItems();
                 attachButtonListeners();
             } else {
-                alert("You can only have up to 9 items at once.");
+                alert("You can only have up to 8 items in your list at once.");
             }
         }
     });
